@@ -38,9 +38,28 @@ nav {
 }
 
 /* 訂閱電子報 */
+.eNew {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.leftEnews{
-  background-image: url(../imgae/Enews/photo9.png);
+.leftEnews,
+.rigthEnews {
+  width: 50%;
+  height: 834px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.leftEnews {
+  background-image: url('../image/Enews/photo9.png');
+}
+
+.rigthEnews {
+  background-image: url('../image/frontPage/HeroSection2.png');
+  transform: scale(-1); /* ✅ 垂直翻轉背景圖像 */
 }
 
 /* 與我聯繫區塊 */
