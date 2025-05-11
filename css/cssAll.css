@@ -59,7 +59,67 @@ nav {
 
 .rigthEnews {
   background-image: url('../image/frontPage/HeroSection2.png');
-  transform: scale(-1); /* ✅ 垂直翻轉背景圖像 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.formBox {
+  background-color: #fff;
+  position: absolute;
+  padding: 80px;
+  max-width: 800px;
+  height: 490px;
+  width: 100%;
+}
+
+.formBox h2 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.formBox p {
+  font-size: 20px;
+  margin-bottom: 24px;
+  background-color: #fff;
+}
+
+.formBox span {
+  color: #0027D5;
+  
+}
+
+.formBox form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.formBox form input{
+  background-color: #F1F1F1;
+  font-size: 20px;
+  color: #4B4B4B;
+  padding: 8px 444px 8px 16px;
+  border: none;
+  outline: none;
+  margin-bottom: 24px;
+}
+
+.formBox form button {
+  min-width: 96px;
+  max-width: 102px;
+  min-height: 40px;
+  padding: 8px 16px;
+  border-radius: 40px;
+  border: 1px solid #0027D5;
+  background-color: transparent;
+  color: #0027D5;
+  font-size: 16px;
+  cursor: pointer;
+  gap: 8px;
 }
 
 /* 與我聯繫區塊 */
