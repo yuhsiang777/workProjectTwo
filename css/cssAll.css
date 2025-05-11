@@ -1,0 +1,59 @@
+* {
+  font-family: Noto Sans TC;
+  background-color: #FBFBFB;
+  color: #000000;
+  /* letter-spacing: 0%; */
+}
+
+.wrap {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.py-24 {
+  padding: 24px 0px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.border-6C757D {
+  border-bottom: 1px solid #6C757D;
+}
+
+.about {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 28px;
+  color: black;
+}
+
+.callMe {
+  margin: 80px 0px;
+}
+
+.callMe h2 {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+.callMeLink .linkEmail {
+  text-decoration: underline;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 500;
+  background-color: #fff;
+}
