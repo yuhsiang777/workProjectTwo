@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=`, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./css/cssAll.css">
   <title>最終任務 - 個人品牌網站</title>
 </head>
@@ -32,56 +33,82 @@
       <!-- 職涯諮詢成功案例 -->
       <section></section>
       <!-- 訂閱電子報 -->
-      <section></section>
+      <section class="contact-section">
+        <div class="container">
+          <div class="row">
+            <div class="leftEnews"></div>
+            <div class="rigthEnews"></div>
+          </div>
+        </div>
+      </section>
       <!-- 與我聯繫 -->
-      <section>
+      <section class="sectionCallMe">
         <div class="container">
           <div class="row">
             <div class="callMe">
               <h2>與我聯繫</h2>
-              <ul class="callMeLink">
-                <li>
-                  <a class="linkEmail" href="mailto:alysewang@hexschool.com">
-                    alysewang@hexschool.com</a><span>合作洽談</span>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="image/callme_icon/youtubeIcon.png" alt="Youtube-Icon">
-                    Youtube<span>職涯諮詢室</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="image/callme_icon/podcastIcon.png" alt="Podcast-Icon">
-                    podcast<span>職涯諮詢室</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="image/callme_icon/facebookIcon.png" alt="Facebook-Icon">
-                    Facebook<span>前端社群</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="image/callme_icon/linkedinIcon.png" alt="Linkedin-Icon">
-                    linkedin<span>職涯交流</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="image/callme_icon/instagramIcon.png" alt="Instagram-Icon">
-                    Instagram<span>日常分享</span>
-                  </a>
-                </li>
-              </ul>
             </div>
+            <ul class="callMeLink">
+              <li>
+                <a href="mailto:alysewang@hexschool.com" class="contact-link a-underline">
+                  <span>
+                    alysewang@hexschool.com <span class="label">合作洽談</span>
+                  </span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <span>
+                    <img src="image/callme_icon/youtubeIcon.png" alt="Youtube Icon">
+                    Youtube <span class="label">職涯諮詢室</span>
+                  </span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <span>
+                    <img src="image/callme_icon/podcastIcon.png" alt="Podcast Icon">
+                    Podcast <span class="label">職涯諮詢室</span>
+                  </span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <span>
+                    <img src="image/callme_icon/facebookIcon.png" alt="Facebook Icon">
+                    Facebook <span class="label">前端社群</span>
+                  </span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <span>
+                    <img src="image/callme_icon/linkedinIcon.png" alt="Linkedin Icon">
+                    LinkedIn <span class="label">職涯交流</span>
+                  </span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <span>
+                    <img src="image/callme_icon/instagramIcon.png" alt="Instagram Icon">
+                    Instagram <span class="label">日常分享</span>
+                  </span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
-    <footer class="py-24">
-      <p>© 2025 Alyse Wang. All rights reserved.</p>
+    <footer>
+      <p class="py-24">© 2025 Alyse Wang. All rights reserved.</p>
     </footer>
   </div>
 
