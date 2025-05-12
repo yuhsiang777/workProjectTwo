@@ -1,6 +1,5 @@
 * {
   font-family: "Noto Sans TC", sans-serif;
-  background-color: #FBFBFB;
   color: #000000;
   box-sizing: border-box;
   font-size: 16px;
@@ -12,6 +11,7 @@
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 16px;
+  background-color: #FBFBFB;
 }
 
 /* 通用間距工具 */
@@ -35,6 +35,93 @@ nav {
   align-items: center;
   font-weight: 700;
   font-size: 28px;
+}
+
+/* 職涯諮詢成功案例 */
+.success-section {
+  padding: 80px 0px;
+}
+
+.success-section .container {
+  max-width: 1296px;
+  margin: 0 auto;
+
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.case-hero {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.hero-img {
+  background-color: #EDEDED;
+  padding: 24px;
+  height: 578px;
+  width: 697px;
+}
+
+.hero-text-card {
+  position: absolute;
+  top: 29px;
+  right: 219px;
+  font-weight: 700;
+  background-color: #fff;
+  width: 526px;
+  padding: 80px 40px;
+}
+
+.link {
+  width: 30px;
+  height: 2.5px;
+  background-color: #0027D5;
+  margin-bottom: 24px;
+}
+
+.hero-text-card p,
+.hero-cta-card p {
+  line-height: 150%;
+}
+
+.hero-text-card span {
+  color: #0027D5;
+}
+
+.hero-cta-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  bottom: 29px;
+  font-weight: 700;
+  background-color: #F5F5F5;
+  width: 526px;
+  padding: 80px 40px;
+}
+
+.hero-cta-card p {
+  margin-bottom: 24px;
+}
+
+.hero-cta-card .btn-primary {
+  display: block;
+  min-width: 128px;
+  max-width: 130px;
+  min-height: 40px;
+  padding: 8px 16px;
+  border-radius: 40px;
+  border: 1px solid #0027D5;
+  background-color: #FFFFFF;
+  color: #0027D5;
+  font-size: 16px;
+  cursor: pointer;
+  gap: 8px;
 }
 
 /* 訂閱電子報 */
@@ -89,7 +176,7 @@ nav {
 
 .formBox span {
   color: #0027D5;
-  
+
 }
 
 .formBox form {
@@ -98,7 +185,7 @@ nav {
   background-color: #fff;
 }
 
-.formBox form input{
+.formBox form input {
   background-color: #F1F1F1;
   font-size: 20px;
   color: #4B4B4B;
