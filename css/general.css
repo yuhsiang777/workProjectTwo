@@ -1,0 +1,43 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #000000;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  /* letter-spacing: 0%; */
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 16px;
+  background-color: #FBFBFB;
+}
+
+/* 通用間距工具 */
+.py-24 {
+  padding: 24px 0px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.border-6C757D {
+  border-bottom: 1px solid #6C757D;
+}
+
+/* 導覽列 */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* Footer */
+footer p {
+  text-align: center;
+  background-color: #fff;
+}
