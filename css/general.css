@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 16px;
   font-weight: 500;
+  line-height: 150%;
   /* letter-spacing: 0%; */
 }
 
@@ -15,8 +16,58 @@
 }
 
 /* 通用間距工具 */
+
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+ol>li {
+  counter-increment: item;
+}
+
+ol>li::before {
+  content: counter(item) ". ";
+}
+
+.blueColor {
+  color: #0027D5;
+}
+
+.mx-4 {
+  margin: 0px 4px;
+}
+
+.my-4 {
+  margin: 4px 0px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-8{
+  margin-right: 8px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .py-24 {
   padding: 24px 0px;
+}
+
+.p-20 {
+  padding: 20px;
 }
 
 .mr-40 {
@@ -28,12 +79,17 @@
 }
 
 /* 導覽列 */
-nav {
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
   font-size: 28px;
+}
+
+nav a {
+  display: block;
+
 }
 
 /* Footer */
