@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC';
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+ol, ul {
+  padding-left: 24px;
+  margin: 0;
+	/* list-style: none; */
+}
+
+ul li::marker {
+  font-size: 10px;
+}
+
+/* === 間距：外距（Margin） === */
+.m-x-4    { margin-left: 4px;  margin-right: 4px; }    /* 左右外距 4px */
+.m-y-4    { margin-top: 4px;   margin-bottom: 4px; }   /* 上下外距 4px */
+.m-y-24   { margin-top: 24px; margin-bottom: 24px; }   /* 上下外距 24px */
+.m-y-80   { margin-top: 80px; margin-bottom: 80px; }   /* 上下外距 24px */
+.m-r-4    { margin-right: 4px; }                       /* 右外距 8px */
+.m-r-8    { margin-right: 8px; }                       /* 右外距 8px */
+.m-r-12   { margin-right: 12px; }                      /* 右外距 12px */
+.m-r-24   { margin-right: 24px; }                      /* 右外距 24px */
+.m-r-40   { margin-right: 40px; }                      /* 右外距 40px */
+.m-l-4   { margin-left: 4px; }                         /* 左外距 4px */
+.m-l-12   { margin-left: 12px; }                       /* 左外距 12px */
+.m-b-4    { margin-bottom: 4px; }                      /* 下外距 8px */
+.m-b-8    { margin-bottom: 8px; }                      /* 下外距 8px */
+.m-b-12    { margin-bottom: 12px; }                      /* 下外距 8px */
+.m-b-24   { margin-bottom: 24px; }                     /* 下外距 24px */
+.m-b-48   { margin-bottom: 48px; }                     /* 下外距 24px */
+
+/* === 間距：內距（Padding） === */
+.p-20     { padding: 20px; }                           /* 四邊內距 20px */
+.p-24     { padding: 24px; }                           /* 四邊內距 24px */
+.px-6-py-12 { padding: 6px 12px;}                    /* 上下內距 6px 左右內距 12px */
+.p-x-4    { padding-left: 4px; padding-right: 4px; }   /* 左右內距 4px */
+.p-x-40   { padding-left: 40px; padding-right: 40px; } /* 左右內距 40px */
+.p-x-16   { padding-left: 16px; padding-right: 16px; } /* 左右內距 16px */
+.p-y-8    { padding-top: 8px; padding-bottom: 8px; }   /* 上下內距 8px */
+.p-y-24   { padding-top: 24px; padding-bottom: 24px; } /* 上下內距 24px */
+.p-y-80   { padding-top: 80px; padding-bottom: 80px; } /* 上下內距 80px */
+
+/* === 排版：Flex 與對齊 === */
+.d-flex         { display: flex; }                     /* 啟用 flex 排版 */
+.justify-center { justify-content: center; }           /* 水平置中 */
+.justify-sb     { justify-content: space-between; }    /* 水平貼齊 */
+.align-center   { align-items: center; }               /* 垂直置中 */
+.flex-center    { display: flex; justify-content: center; align-items: center; } /* 完整置中 */
+.flex-direction-start     { display: flex; flex-direction: column; justify-content: center; }
+
+/* === 文字樣式 === */
+.text-center  { text-align: center; }                  /* 文字置中 */
+.text-write    { color: #fff; }                    /* 深灰文字 */
+.text-dark    { color: #4B4B4B; }                    /* 深灰文字 */
+.text-primary { color: #0027D5; }                    /* 主色文字 */
+.font-common  { font-weight: 500; }                    /* 常規文字 */
+.font-bold    { font-weight: 700; }                    /* 粗體文字 */
+.font-20      { font-size: 20px; }                     /* 文字大小 20px */
+.font-24      { font-size: 24px; }                     /* 文字大小 20px */
+.font-28      { font-size: 28px; }                     /* 文字大小 28px */
+.font-64      { font-size: 64px; }                     /* 文字大小 64px */
+
+/* === 背景色 === */
+.bg-white { background-color: #ffffff; }               /* 白底 */
+.bg-light { background-color: #FBFBFB; }               /* 淺灰底 */
+.bg-gray  { background-color: #EDEDED; }               /* 灰底 */
+.bg-blue  { background-color: #0027D5; }               /* 主色底 */
+
+/* === 邊框樣式 === */
+.border-b-gray  { border-bottom: 1px solid #6C757D; }  /* 下邊框灰色 */
+.border-b-dark  { border-bottom: 1px solid #4B4B4B; }  /* 下邊框深色 */
+.border-b-blue  { border-bottom: 1px solid #0027D5; }  /* 下邊框主色 */
+
+/* === 邊框圓角 === */
+.border-r-24 { border-radius: 24px }
+.border-r-40 { border-radius: 40px }
+
+/* === 圖片寬度 === */
+.image-100 { width: 100%; }
+
+/*  === a 連結底線設定 === */
+.a-underline {
+  text-decoration: underline;                     /* 開啟連結 */
+}
+
+/*  === ol And ul 設定 === */
+.olNul-closure {
+  padding: 0;
+  list-style: none;                               /* 關閉 ol 跟 ul 預設 */
+}
+
+.max-h-640 { max-height: 640px; }
+
+.w-50 {
+  width: 50%;
+}
+.content-header {
+  max-height: 640px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 636px;
+}
+
+.btn-pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0px;
+}
+.btn-pagination-item{
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 40px;
+}
+.contact {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+
