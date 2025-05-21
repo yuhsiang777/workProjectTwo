@@ -6,6 +6,7 @@ body {
   font-family: 'Noto Sans TC';
   font-weight: 500;
   line-height: 1.5;
+  background-color: #FBFBFB;
 }
 
 ol, ul {
@@ -18,9 +19,12 @@ ul li::marker {
   font-size: 10px;
 }
 
+img { 
+  display: block;
+}
+
 /* === 間距：外距（Margin） === */
 .m-x-4    { margin-left: 4px;  margin-right: 4px; }    /* 左右外距 4px */
-.m-x-312    { margin-left: 312px;  margin-right: 312px; }    /* 左右外距 4px */
 .m-y-4    { margin-top: 4px;   margin-bottom: 4px; }   /* 上下外距 4px */
 .m-y-24   { margin-top: 24px; margin-bottom: 24px; }   /* 上下外距 24px */
 .m-y-80   { margin-top: 80px; margin-bottom: 80px; }   /* 上下外距 24px */
@@ -58,9 +62,10 @@ ul li::marker {
 
 /* === 文字樣式 === */
 .text-center  { text-align: center; }                  /* 文字置中 */
-.text-write    { color: #fff; }                    /* 深灰文字 */
+.text-write    { color: #fff; }                      /* 白色文字 */
 .text-dark    { color: #4B4B4B; }                    /* 深灰文字 */
 .text-primary { color: #0027D5; }                    /* 主色文字 */
+.text-black   { color: #000     }                    /* 黑色文字 */
 .font-common  { font-weight: 500; }                    /* 常規文字 */
 .font-bold    { font-weight: 700; }                    /* 粗體文字 */
 .font-20      { font-size: 20px; }                     /* 文字大小 20px */
@@ -125,8 +130,12 @@ ul li::marker {
   border-radius: 40px;
 }
 .contact {
-  max-width: 1920px;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
-
+@media (max-width: 375px){
+  .contact{
+    display: none;
+  }
+}
