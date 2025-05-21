@@ -135,6 +135,7 @@ img {
 }
 
 @media (max-width: 375px){
+  
   .contact{
     display: none;
   }
