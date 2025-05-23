@@ -1,0 +1,36 @@
+/* === 區塊：內容區域 === */
+.content__header {
+  max-height: 640px;
+  margin: 0 auto;
+}
+
+.content__body {
+  margin: 0 auto;
+  max-width: 636px;
+}
+
+/* === 分頁按鈕 === */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.pagination__item {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 40px;
+}
+
+/* === 聯絡區塊 === */
+.section--contact {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+  .section--contact {
+    display: none;
+  }
+}
