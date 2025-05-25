@@ -1,36 +1,31 @@
-/* === 區塊：內容區域 === */
-.content__header {
-  max-height: 640px;
-  margin: 0 auto;
+* {
+  font-family: 'Noto Sans TC';
+  line-height: 1.5;
 }
 
-.content__body {
-  margin: 0 auto;
-  max-width: 636px;
+/* 導覽列 */
+header {
+  padding: 24px 0px;
+  border-bottom: 1px solid #6C757D;
 }
 
-/* === 分頁按鈕 === */
-.pagination {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
+.navbar-container a {
+  font-weight: 700px;
+  color: #000;
+  font-size: 28px;
 }
 
-.pagination__item {
-  padding: 8px 16px;
-  border: 1px solid #000;
-  border-radius: 40px;
+main .blog-border {
+  border-top: 1px solid #6C757D;
+  border-bottom: 1px solid #6C757D;
 }
 
-/* === 聯絡區塊 === */
-.section--contact {
-  max-width: 1296px;
-  margin: 0 auto;
+.text-container {
+  background-color: #fff;
+  padding: 24px 0px;
+  text-align: center;
 }
 
-@media (max-width: 375px) {
-  .section--contact {
-    display: none;
-  }
-}
+@media (max-width: 767px) {}
+
+@media (max-width: 375px) {}

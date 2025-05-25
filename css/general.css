@@ -35,6 +35,13 @@ img {
   justify-content: center;
 }
 
+/* 內距 Padding */
+/* 右 */
+.pr-20 { padding-right: 20px; }
+/* 左 */
+.pl-20 { padding-left: 20px; }
+
+
 /* === 背景色設定 === */
 .bg--white { background-color: #fff; }
 .bg--light { background-color: #FBFBFB; }
