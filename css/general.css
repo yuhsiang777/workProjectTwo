@@ -4,43 +4,19 @@
 }
 
 body {
-  font-family: 'Noto Sans TC';
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   background-color: #FBFBFB;
-}
-
-ol, ul {
-  padding-left: 24px;
-  margin: 0;
 }
 
 ul li::marker {
   font-size: 10px;
 }
 
-img {
-  display: block;
-}
-
-/* === Flex 排版與對齊 === */
-.flex { display: flex; }
-.flex--center-x { justify-content: center; }
-.flex--space-between { justify-content: space-between; }
-.flex--center-y { align-items: center; }
-.flex--center { display: flex; justify-content: center; align-items: center; }
-.flex--column-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* 內距 Padding */
-/* 右 */
-.pr-20 { padding-right: 20px; }
-/* 左 */
-.pl-20 { padding-left: 20px; }
-
+/* 文字顏色 */
+.text--white { color: #fff; }
+.text--blue { color: #0027D5; }
 
 /* === 背景色設定 === */
 .bg--white { background-color: #fff; }
@@ -71,16 +47,7 @@ img {
   list-style: none;
 }
 
-/* === 高度與寬度設定 === */
-.max-height--640 { max-height: 640px; }
-.width--50 { width: 50%; }
-
 /* === 容器設定 === */
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
 
 /* === 響應式設定 === */
 @media (max-width: 768px) {

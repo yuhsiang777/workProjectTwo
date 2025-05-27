@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/general_layout.css">
   <link rel="stylesheet" href="./css/general.css">
   <link rel="stylesheet" href="./css/blog_Detail.css">
   <title>自學前端不用怕：從零開始的三大關鍵</title>
@@ -13,45 +12,43 @@
 
 <body>
   <div class="wrap">
-    <header>
-      <nav class="navbar-container flex--center">
-        <a class="pr-20" href="#">首頁</a>
-        <a class="pl-20" href="#">部落格</a>
+    <header class="border-color-grey">
+      <nav>
+        <a class="mr-20" href="#">首頁</a>
+        <a class="ml-20" href="#">部落格</a>
       </nav>
     </header>
     <main>
-      <article class="blog-article">
+      <article class="blog-article border-color-grey">
         <!-- 標頭 -->
-        <section>
-          <div class="container">
-            <div class="row">
-              <!-- 左圖 -->
-              <div class="col-left">
-                <img src="image/blog-content/About Section.png" alt="程式碼示意圖">
-              </div>
-              <!-- 右邊文字 -->
-              <div class="col-right">
-                <time datetime="2024-10-21">2024/10/21</time>
-                <!-- 文字排序。這邊做 flex -->
-                <ul>
-                  <li>
-                    <p>前端開發 x 職涯成長</p>
-                  </li>
-                  <li>
-                    <p>最新文章</p>
-                  </li>
-                </ul>
-                <h1>自學前端不用怕：從零開始的三大關鍵</h1>
-              </div>
+        <section class="border-color-grey">
+          <div class="row">
+            <!-- 左圖 -->
+            <div class="col-left">
+              <img class="img--full-width" src="image/blog-content/About Section.png" alt="程式碼示意圖">
+            </div>
+            <!-- 右邊文字 -->
+            <div class="col-right">
+              <time class="" datetime="2024-10-21">2024/10/21</time>
+              <!-- 文字排序。這邊做 flex -->
+              <ul class="">
+                <li>
+                  <p class="">前端開發 x 職涯成長</p>
+                </li>
+                <li>
+                  <p class="">最新文章</p>
+                </li>
+              </ul>
+              <h1>自學前端不用怕：從零開始的三大關鍵</h1>
             </div>
           </div>
         </section>
         <!-- 文章內容 -->
         <section class="blog-border">
           <div class="container">
-            <div class="row">
+            <div class="row flex-direction-x">
               <!-- 前言 -->
-              <div class="">
+              <div>
                 <h2>前言</h2>
                 <p>
                   嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
@@ -59,16 +56,68 @@
                 </p>
               </div>
               <!-- 打好基礎：HTML、CSS、JavaScript -->
-              <div class="">
+              <div class="mt-48">
                 <img src="image/blog-content/content1.png" alt="程式碼示意圖-1">
                 <h2>打好基礎：HTML、CSS、JavaScript</h2>
                 <!-- HTML 與語意化 -->
+                <div>
+                  <h3>HTML 與語意化</h3>
+                  <p>
+                    學習常見標籤的用途與屬性，如 &lt;section&gt;、&lt;article&gt;、&lt;nav&gt;
+                  </p>
+                  <p>建議做法：</p>
+                  <ol>
+                    <li class="">
+                      先掌握基礎 CSS 後，再學習 SASS 或 LESS 這類預處理器，提升樣式開發效率。
+                    </li>
+                    <li class="">
+                      善用善用 MDN、W3Schools 等官方文件，找尋範例程式碼並練習。
+                    </li>
+                  </ol>
+                </div>
                 <!-- CSS 佈局與預處理器 -->
+                <div>
+                  <h3>CSS 佈局與預處理器</h3>
+                  <p>
+                    為何重要：好看的網站來自穩定的排版與佈局，掌握 Flexbox、Grid 能讓你隨心所欲打造響應式頁面。
+                  </p>
+                  <p>建議做法：</p>
+                  <ol>
+                    <li class="">
+                      先掌握基礎 CSS 後，再學習 SASS 或 LESS 這類預處理器，提升樣式開發效率。
+                    </li>
+                    <li class="">
+                      善用
+                      <span class="">CSS-Tricks</span>
+                      等資源，了解常見版型技巧。
+                    </li>
+                  </ol>
+                </div>
                 <!-- JavaScript 核心觀念 -->
+                <div>
+                  <h3>JavaScript 核心觀念</h3>
+                  <p>
+                    為何重要：互動效果、資料處理、前端邏輯都仰賴 JavaScript。
+                  </p>
+                  <p>建議做法：</p>
+                  <ol>
+                    <li class="">
+                      先打穩 ES5 與 ES6 語法基礎，理解閉包 (Closure)、原型鍊 (Prototype) 等核心機制。
+                    </li>
+                    <li class="">
+                      學會事件監聽、API 資料串接等常見應用，增添網站互動性。
+                    </li>
+                  </ol>
+                </div>
                 <!-- 小結 -->
+                <div>
+                  <p>
+                    小結：在學習基礎語法時，同步進行小專案實作（如 Todo List、計算機、切版作品集）會讓你進步更快，也能累積展示用作品。
+                  </p>
+                </div>
               </div>
               <!-- 擅用主流框架與工具 -->
-              <div class="">
+              <div class="mt-48">
                 <img src="image/blog-content/content2.png" alt="程式碼示意圖-2">
                 <h2>擅用主流框架與工具</h2>
                 <!-- React、Vue 先挑一個 -->
@@ -111,7 +160,7 @@
                 </div>
               </div>
               <!-- 持續練習與參與社群 -->
-              <div class="">
+              <div class="mt-48">
                 <img src="image/blog-content/content3.png" alt="團體活動示意圖">
                 <h2>持續練習與參與社群</h2>
                 <!-- 多參加前端挑戰 / Hackathon -->
@@ -144,7 +193,7 @@
                 </div>
               </div>
               <!-- 結語 -->
-              <div class="">
+              <div class="mt-48">
                 <img src="image/blog-content/content4.png" alt="成功示意圖">
                 <h2>結語</h2>
                 <!-- 文字 + a 連結 -->
@@ -162,7 +211,7 @@
                 </p>
               </div>
               <!-- 延伸閱讀 -->
-              <div class="">
+              <div class="mt-48">
                 <h2>延伸閱讀</h2>
                 <ul>
                   <li>前端面試不再慌：破解常見提問的三大策略</li>
@@ -171,8 +220,8 @@
                 </ul>
               </div>
               <!-- 上 / 下篇 -->
-              <div>
-                <ul class="">
+              <div class="mt-48">
+                <ul class="row">
                   <li><a href=""><i class="bi bi-chevron-left"></i>上一篇</a></li>
                   <li><a href="">下一篇 <i class="bi bi-chevron-right"></i></a></li>
                 </ul>
@@ -182,7 +231,7 @@
         </section>
       </article>
       <!-- 聯絡我們 -->
-      <section>
+      <section class="">
         <div class="container">
           <div class="row">
             <div class="col-left">
