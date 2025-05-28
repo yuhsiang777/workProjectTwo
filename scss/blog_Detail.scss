@@ -1,0 +1,245 @@
+* {
+  font-family: Noto Sans TC, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: #FBFBFB;
+  box-sizing: border-box;
+}
+
+/* ==== 導覽列 ==== */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    padding: 24px 0;
+    font-weight: 700;
+    font-size: 28px;
+    color: #000;
+
+    &:hover {
+      color: #0027D5;
+    }
+  }
+
+  .mr-20 {
+    margin-right: 20px;
+  }
+
+  .ml-20 {
+    margin-left: 20px;
+  }
+}
+
+/* ==== 文章內容修改 ==== */
+main {
+
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #0027D5;
+    margin: 24px 0;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .ml-4 {
+    margin-left: 4px;
+  }
+
+  .mr-4 {
+    margin-right: 4px;
+  }
+
+  .mb-8 {
+    margin-bottom: 8px;
+  }
+
+  .justified-text {
+    text-align: justify;
+  }
+
+  .border-color {
+    border-bottom: 1px solid #6C757D;
+  }
+
+  .blog-article {
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .headTitle {
+      border-top: 1px solid #6C757D;
+      border-bottom: 1px solid #6C757D;
+
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .col-left {
+          width: 50%;
+          margin-right: 12px;
+        }
+
+        .col-right {
+          width: 50%;
+          margin-left: 12px;
+
+          time {
+            margin-bottom: 4px;
+          }
+
+          ul {
+            display: flex;
+            align-items: center;
+
+            .blue-text {
+              font-size: 24px;
+              color: #0027D5;
+              margin-right: 8px;
+
+            }
+
+            .blue-btn {
+              padding: 6px 12px;
+              color: #fff;
+              background-color: #0027D5;
+              border-radius: 40px;
+              font-weight: 700;
+            }
+          }
+
+          h1 {
+            margin-top: 8px;
+            font-weight: 700;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+    .blog-border {
+      max-width: 636px;
+      margin: 0 auto;
+
+      .container {
+        margin: 80px 0;
+
+        .col-preface {
+          margin-bottom: 48px;
+        }
+
+        .col-articleContent {
+          margin-bottom: 48px;
+
+          .col-littleHiTag {
+            margin-bottom: 24px;
+
+            .custom-list-num {
+              list-style-type: decimal;
+              padding-left: 24px;
+            }
+
+            .custom-list-disc {
+              list-style-type: disc;
+              padding-left: 24px;
+
+              a {
+                color: #000;
+
+                &:hover {
+                  color: #0027D5;
+                }
+              }
+            }
+
+            span {
+              color: #0027D5;
+              padding: 0 4px;
+            }
+          }
+
+          .col-summary {
+            font-weight: 700;
+            padding: 24px;
+            border-radius: 24px;
+            background-color: #EDEDED;
+          }
+
+          .callMeTag {
+            text-decoration: underline;
+            color: #0027D5;
+          }
+        }
+
+      }
+    }
+  }
+
+  .postLink {
+    .row {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 8px 16px;
+          border: 1px solid #000000;
+          border-radius: 40px;
+        }
+
+        p {
+          color: #4B4B4B;
+        }
+
+        i {
+          font-size: 24px;
+        }
+      }
+    }
+
+  }
+
+  /* ==== 聯絡我們 ==== */
+
+  .callMe {
+    .row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 80px 0;
+
+      .col-left {
+        font-size: 32px;
+      }
+
+      .col-right ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+
+
+/* ==== 底部標籤 ==== */
+.text-container {
+  text-align: center;
+  padding: 24px 0px;
+  color: #000;
+  background-color: #fff;
+}
