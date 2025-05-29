@@ -1,10 +1,13 @@
 @charset "UTF-8";
 * {
-  font-family: Noto Sans TC, sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   line-height: 1.5;
   font-weight: 500;
-  background-color: #FBFBFB;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #FBFBFB;
 }
 
 /* ==== 導覽列 ==== */
@@ -34,8 +37,8 @@ main {
   /* ==== 聯絡我們 ==== */
 }
 main h2 {
-  font-weight: 700;
   font-size: 28px;
+  font-weight: 700;
   color: #0027D5;
   margin: 24px 0;
 }
@@ -114,6 +117,9 @@ main .blog-article .blog-border .container {
 main .blog-article .blog-border .container .col-preface {
   margin-bottom: 48px;
 }
+main .blog-article .blog-border .container .col-preface h2 {
+  margin-top: 0;
+}
 main .blog-article .blog-border .container .col-articleContent {
   margin-bottom: 48px;
 }
@@ -187,4 +193,39 @@ main .callMe .row .col-right ul {
   padding: 24px 0px;
   color: #000;
   background-color: #fff;
+}
+
+@media (max-width: 375px) {
+  main {
+    /* ==== 聯絡我們 ==== */
+  }
+  main .blog-article img {
+    display: block;
+    width: 100%;
+  }
+  main .blog-article .headTitle {
+    border-top: 0px solid #6C757D;
+  }
+  main .blog-article .headTitle .row {
+    flex-direction: column;
+  }
+  main .blog-article .headTitle .row .col-left {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  main .blog-article .headTitle .row .col-right {
+    width: 100%;
+    padding: 0 12px;
+    margin: 48px 0px;
+  }
+  main .blog-article .blog-border .container {
+    margin: 64px 0;
+  }
+  main .blog-article .blog-border .container .col-preface {
+    margin-bottom: 48px;
+  }
+  main .callMe {
+    display: none;
+  }
 }/*# sourceMappingURL=blog_Detail.css.map */

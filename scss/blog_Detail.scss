@@ -1,9 +1,26 @@
+$primary-color: #0027D5;
+$secondary-color: #6C757D;
+$gray-bg: #FBFBFB;
+$gray-box: #EDEDED;
+$font-main: 'Noto Sans TC', sans-serif;
+
+$font-title: 28px;
+$font-subtitle: 24px;
+$font-text: 16px;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// 🌈 全域設定與變數 Global Styles
+
 * {
-  font-family: Noto Sans TC, sans-serif;
+  font-family: $font-main;
   line-height: 1.5;
-  font-weight: 500;
-  background-color: #FBFBFB;
+  font-weight: $font-weight-medium;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $gray-bg;
 }
 
 /* ==== 導覽列 ==== */
@@ -14,12 +31,12 @@ header nav {
 
   a {
     padding: 24px 0;
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: $font-weight-bold;
+    font-size: $font-title;
     color: #000;
 
     &:hover {
-      color: #0027D5;
+      color: $primary-color;
     }
   }
 
@@ -36,15 +53,15 @@ header nav {
 main {
 
   h2 {
-    font-weight: 700;
-    font-size: 28px;
-    color: #0027D5;
+    font-size: $font-title;
+    font-weight: $font-weight-bold;
+    color: $primary-color;
     margin: 24px 0;
   }
 
   h3 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     margin-bottom: 12px;
   }
 
@@ -65,7 +82,7 @@ main {
   }
 
   .border-color {
-    border-bottom: 1px solid #6C757D;
+    border-bottom: 1px solid $secondary-color;
   }
 
   .blog-article {
@@ -102,25 +119,24 @@ main {
             align-items: center;
 
             .blue-text {
-              font-size: 24px;
-              color: #0027D5;
+              font-size: $font-subtitle;
+              color: $primary-color;
               margin-right: 8px;
-
             }
 
             .blue-btn {
               padding: 6px 12px;
               color: #fff;
-              background-color: #0027D5;
+              background-color: $primary-color;
               border-radius: 40px;
-              font-weight: 700;
+              font-weight: $font-weight-bold;
             }
           }
 
           h1 {
             margin-top: 8px;
-            font-weight: 700;
-            font-size: 28px;
+            font-weight: $font-weight-bold;
+            font-size: $font-title;
           }
         }
       }
@@ -134,6 +150,10 @@ main {
         margin: 80px 0;
 
         .col-preface {
+          h2 {
+            margin-top: 0;
+          }
+
           margin-bottom: 48px;
         }
 
@@ -156,27 +176,27 @@ main {
                 color: #000;
 
                 &:hover {
-                  color: #0027D5;
+                  color: $primary-color;
                 }
               }
             }
 
             span {
-              color: #0027D5;
+              color: $primary-color;
               padding: 0 4px;
             }
           }
 
           .col-summary {
-            font-weight: 700;
+            font-weight: $font-weight-bold;
             padding: 24px;
             border-radius: 24px;
-            background-color: #EDEDED;
+            background-color: $gray-box;
           }
 
           .callMeTag {
             text-decoration: underline;
-            color: #0027D5;
+            color: $primary-color;
           }
         }
 
@@ -233,13 +253,62 @@ main {
   }
 }
 
-
-
-
 /* ==== 底部標籤 ==== */
 .text-container {
   text-align: center;
   padding: 24px 0px;
   color: #000;
   background-color: #fff;
+}
+
+
+@media(max-width: 375px) {
+
+  main {
+
+    .blog-article {
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      .headTitle {
+        border-top: 0px solid #6C757D;
+
+        .row {
+          flex-direction: column;
+
+          .col-left {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+          }
+
+          .col-right {
+            width: 100%;
+            padding: 0 12px;
+            margin: 48px 0px;
+          }
+        }
+      }
+
+      .blog-border {
+
+        .container {
+          margin: 64px 0;
+
+          .col-preface {
+            margin-bottom: 48px;
+          }
+
+        }
+      }
+    }
+
+    /* ==== 聯絡我們 ==== */
+    .callMe {
+      display: none;
+    }
+  }
 }
