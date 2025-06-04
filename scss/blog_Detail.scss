@@ -50,6 +50,12 @@ header nav {
 }
 
 /* ==== 文章內容修改 ==== */
+h1 {
+  margin-top: 8px;
+  font-weight: $font-weight-bold;
+  font-size: $font-title;
+}
+
 h2 {
   font-size: $font-title;
   font-weight: $font-weight-bold;
@@ -130,12 +136,6 @@ main {
             border-radius: 40px;
             font-weight: $font-weight-bold;
           }
-        }
-
-        h1 {
-          margin-top: 8px;
-          font-weight: $font-weight-bold;
-          font-size: $font-title;
         }
       }
     }
@@ -248,6 +248,14 @@ main {
         align-items: center;
       }
     }
+
+    a {
+      color: #4B4B4B;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
   }
 }
 
@@ -260,7 +268,7 @@ main {
 }
 
 @media(max-width: 768px) {
-  body {
+  .row {
     padding: 0 12px;
   }
 
@@ -300,10 +308,7 @@ main {
   main {
 
     .blog-article {
-
-
       .blog-border {
-
         .container {
           margin: 64px 0;
 
