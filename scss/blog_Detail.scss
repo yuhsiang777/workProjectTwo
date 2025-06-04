@@ -269,9 +269,6 @@ main {
 }
 
 @media(max-width: 768px) {
-  .row {
-    padding: 0 12px;
-  }
 
   img {
     display: block;
@@ -284,7 +281,7 @@ main {
 
       .row {
         flex-direction: column;
-
+        padding: 0 12px;
         .col-left {
           width: 100%;
           margin-right: 0;
