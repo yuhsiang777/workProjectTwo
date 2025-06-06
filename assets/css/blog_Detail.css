@@ -193,7 +193,7 @@ main .callMe .row .col-right ul {
   align-items: center;
 }
 main .callMe a {
-  color: #4B4B4B;
+  color: #000;
 }
 main .callMe a:hover {
   color: #0027D5;
