@@ -37,7 +37,7 @@ $font-weight-bold: 700;
   .col-right {
     display: flex;
     align-items: center;
-    background-image: url("/image/index/HeroSection2.png");
+    background-image: url("../image/index/HeroSection2.png");
     color: $primary-color;
 
     .hitTitleText {
@@ -202,3 +202,70 @@ $font-weight-bold: 700;
 
   }
 }
+
+.callMe {
+  border-top: 1px solid #6C757D;
+}
+
+@media(max-width: 768px) {
+  .mr-24 {
+    margin-right: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .blogHitTitle {
+    .row {
+      flex-direction: column;
+    }
+
+    .col-left,
+    .col-right {
+      width: 100%;
+    }
+
+    .col-right {
+      padding: 24px 0;
+      margin: 0 auto;
+      border-bottom: 1px solid #6C757D;
+
+      h1 {
+        font-size: 90px;
+      }
+    }
+
+  }
+
+  .main-content {
+    padding: 80px 0;
+    width: 100%;
+    margin: 0;
+
+    .row {
+      align-items: stretch;
+      padding: 0px 12px;
+    }
+  }
+
+  .article-list {
+    justify-content: center;
+
+    li {
+      max-width: 100%;
+    }
+  }
+
+  .callMe {
+    display: none;
+  }
+
+}
+
+main .newArticle .row {
+  padding: 0;
+}
+
+@media(max-width: 375px) {}

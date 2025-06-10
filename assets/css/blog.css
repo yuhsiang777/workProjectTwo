@@ -22,7 +22,7 @@
 .blogHitTitle .col-right {
   display: flex;
   align-items: center;
-  background-image: url("/image/index/HeroSection2.png");
+  background-image: url("../image/index/HeroSection2.png");
   color: #0027D5;
 }
 .blogHitTitle .col-right .hitTitleText {
@@ -151,4 +151,54 @@
   width: 40px;
   color: #4B4B4B;
   margin: 8px 0;
+}
+
+.callMe {
+  border-top: 1px solid #6C757D;
+}
+
+@media (max-width: 768px) {
+  .mr-24 {
+    margin-right: 0;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  .blogHitTitle .row {
+    flex-direction: column;
+  }
+  .blogHitTitle .col-left,
+  .blogHitTitle .col-right {
+    width: 100%;
+  }
+  .blogHitTitle .col-right {
+    padding: 24px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #6C757D;
+  }
+  .blogHitTitle .col-right h1 {
+    font-size: 90px;
+  }
+  .main-content {
+    padding: 80px 0;
+    width: 100%;
+    margin: 0;
+  }
+  .main-content .row {
+    align-items: stretch;
+    padding: 0px 12px;
+  }
+  .article-list {
+    justify-content: center;
+  }
+  .article-list li {
+    max-width: 100%;
+  }
+  .callMe {
+    display: none;
+  }
+}
+main .newArticle .row {
+  padding: 0;
 }/*# sourceMappingURL=blog.css.map */
