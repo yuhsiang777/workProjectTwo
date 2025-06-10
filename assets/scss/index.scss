@@ -1,0 +1,133 @@
+$primary-color: #0027D5;
+$secondary-color: #6C757D;
+$gray-bg: #FBFBFB;
+$gray-box: #EDEDED;
+$font-main: 'Noto Sans TC', sans-serif;
+
+$font-title: 28px;
+$font-subtitle: 24px;
+$font-text: 16px;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// 🌈 全域設定與變數 Global Styles
+
+* {
+  font-family: $font-main;
+  line-height: 1.5;
+  font-weight: $font-weight-medium;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $gray-bg;
+}
+
+/* ==== 導覽列 ==== */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    padding: 24px 0;
+    font-weight: $font-weight-bold;
+    font-size: $font-title;
+    color: #000;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .mr-20 {
+    margin-right: 20px;
+  }
+
+  .ml-20 {
+    margin-left: 20px;
+  }
+}
+
+/* ==== 底部標籤 ==== */
+.text-container {
+  text-align: center;
+  padding: 24px 0px;
+  color: #000;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  font-size: $font-title;
+  color: $primary-color;
+  margin: 24px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.aboutMe {
+
+  .row {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .col-left,
+  .col-right {
+    width: 50%;
+  }
+
+  .col-right {
+    display: flex;
+    align-items: center;
+    background-image: url("../image/index/HeroSection2.png");
+    color: $primary-color;
+
+    .hitTitleText {
+      margin-left: 80px;
+    }
+
+    h1 {
+      font-weight: 900;
+      font-size: 120px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 28px;
+    }
+  }
+}
+
+.aboutMe-col-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px;
+  background-color: #fff;
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  .aboutMe-link-list {
+    display: flex;
+  }
+
+}
+
