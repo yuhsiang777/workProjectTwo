@@ -12,6 +12,14 @@ $font-weight-bold: 700;
 
 // 🌈 全域設定與變數 Global Styles
 
+.ml-24 {
+  margin-left: 24px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
 * {
   font-family: $font-main;
   line-height: 1.5;
@@ -64,9 +72,9 @@ h3 {
 }
 
 h2 {
-  font-size: $font-title;
-  color: $primary-color;
-  margin: 24px 0;
+  font-size: 64px;
+  color: #000;
+  margin-bottom: 24px;
 }
 
 h3 {
@@ -77,6 +85,10 @@ h3 {
 img {
   display: block;
   width: 100%;
+}
+
+.border-b-secondary {
+  border-bottom: 1px solid $secondary-color;
 }
 
 .aboutMe {
@@ -131,3 +143,73 @@ img {
 
 }
 
+.d-flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line {
+  margin: 20px 0px 18.75px 5px;
+  width: 30px;
+  height: 2.5px;
+  background-color: $primary-color;
+  border-radius: 40px;
+}
+
+// main
+.services-section {
+  border-bottom: 1px solid;
+  padding: 80px 0;
+
+  .container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  .services-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 110px;
+
+    li {
+      display: flex;
+    }
+  }
+
+  .contact-cta {
+    margin-top: 32px;
+    text-align: end;
+
+    a {
+      font-size: $font-title;
+      font-weight: $font-weight-bold;
+      color: #000;
+    }
+
+    i {
+      font-size: 24px;
+    }
+  }
+}
+
+.services-text {
+  background-color: #fff;
+}
+
+.col-left {
+  img {
+    width: 100%;
+  }
+
+  width: 50%;
+}
+
+.col-right {
+  img {
+    width: 100%;
+  }
+
+  width: 50%;
+}
