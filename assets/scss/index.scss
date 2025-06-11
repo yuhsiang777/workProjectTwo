@@ -92,7 +92,6 @@ img {
 }
 
 .aboutMe {
-
   .row {
     display: flex;
     align-items: stretch;
@@ -128,7 +127,8 @@ img {
 }
 
 .aboutMe-col-bottom {
-  display: flex;
+  width: 55%;
+  display: inline-flex;
   flex-direction: column;
   padding: 80px 40px;
   background-color: #fff;
@@ -149,13 +149,6 @@ img {
   justify-content: center;
 }
 
-.line {
-  margin: 20px 0px 18.75px 5px;
-  width: 30px;
-  height: 2.5px;
-  background-color: $primary-color;
-  border-radius: 40px;
-}
 
 // main
 .services-section {
@@ -178,19 +171,25 @@ img {
     }
   }
 
-  .contact-cta {
-    margin-top: 32px;
-    text-align: end;
 
-    a {
-      font-size: $font-title;
-      font-weight: $font-weight-bold;
-      color: #000;
-    }
+}
 
-    i {
-      font-size: 24px;
+.contact-cta {
+  margin-top: 32px;
+  text-align: end;
+
+  a {
+    font-size: $font-title;
+    font-weight: $font-weight-bold;
+    color: #000;
+
+    &:hover {
+      color: $primary-color;
     }
+  }
+
+  i {
+    font-size: 24px;
   }
 }
 
