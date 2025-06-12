@@ -1,12 +1,4 @@
 @charset "UTF-8";
-.ml-24 {
-  margin-left: 24px;
-}
-
-.mr-24 {
-  margin-right: 24px;
-}
-
 * {
   font-family: "Noto Sans TC", sans-serif;
   line-height: 1.5;
@@ -15,7 +7,7 @@
 }
 
 body {
-  background-color: #FBFBFB;
+  background-color: #6C757D;
 }
 
 /* ==== 導覽列 ==== */
@@ -70,6 +62,18 @@ img {
   width: 100%;
 }
 
+.services-section .container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+.row .col-left,
+.row .col-right {
+  width: 50%;
+}
+
 .border-b-secondary {
   border-bottom: 1px solid #6C757D;
 }
@@ -77,10 +81,6 @@ img {
 .aboutMe .row {
   display: flex;
   align-items: stretch;
-}
-.aboutMe .col-left,
-.aboutMe .col-right {
-  width: 50%;
 }
 .aboutMe .col-right {
   display: flex;
@@ -103,9 +103,9 @@ img {
 }
 
 .aboutMe-col-bottom {
+  margin-left: auto;
+  margin-right: 80px;
   width: 55%;
-  display: inline-flex;
-  flex-direction: column;
   padding: 80px 40px;
   background-color: #fff;
 }
@@ -116,60 +116,63 @@ img {
   display: flex;
 }
 
-.d-flex-center {
+.newsletter-signup .col-right {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-}
-
-.services-section {
-  border-bottom: 1px solid;
-  padding: 80px 0;
-}
-.services-section .container {
-  max-width: 1296px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-.services-section .services-item {
-  display: flex;
-  flex-direction: column;
-  margin: 0 110px;
-}
-.services-section .services-item li {
-  display: flex;
-}
-
-.contact-cta {
-  margin-top: 32px;
-  text-align: end;
-}
-.contact-cta a {
-  font-size: 28px;
-  font-weight: 700;
-  color: #000;
-}
-.contact-cta a:hover {
+  background-image: url("../image/index/HeroSection2.png");
   color: #0027D5;
 }
-.contact-cta i {
-  font-size: 24px;
-}
-
-.services-text {
+.newsletter-signup .col-right .newsletter-box {
+  width: 80%;
+  padding: 80px;
   background-color: #fff;
 }
+.newsletter-signup h2 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+.newsletter-signup p {
+  color: #000;
+  margin-bottom: 24px;
+}
+.newsletter-signup span {
+  color: #0027D5;
+}
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.newsletter-signup form input {
+  margin-bottom: 8px;
+  width: 90%;
+  padding: 8px 16px;
+  background-color: #F1F1F1;
+  color: #4B4B4B;
+  border: none;
+}
+.newsletter-signup form button {
+  margin-top: 16px;
+  display: inline-flex;
+  border-radius: 40px;
+  padding: 8px 16px;
+  border: 1px solid #0027D5;
+  background-color: #fff;
+  color: #0027D5;
+}
 
-.col-left {
-  width: 50%;
+.contact-section .row {
+  flex-direction: column;
 }
-.col-left img {
-  width: 100%;
+.contact-section .callMe-item {
+  display: flex;
+  justify-content: space-between;
 }
-
-.col-right {
-  width: 50%;
-}
-.col-right img {
-  width: 100%;
+.contact-section .callMe-item a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #000;
 }/*# sourceMappingURL=index.css.map */

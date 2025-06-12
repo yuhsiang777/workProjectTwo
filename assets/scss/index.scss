@@ -10,16 +10,6 @@ $font-text: 16px;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 
-// 🌈 全域設定與變數 Global Styles
-
-.ml-24 {
-  margin-left: 24px;
-}
-
-.mr-24 {
-  margin-right: 24px;
-}
-
 * {
   font-family: $font-main;
   line-height: 1.5;
@@ -28,7 +18,8 @@ $font-weight-bold: 700;
 }
 
 body {
-  background-color: $gray-bg;
+  // background-color: $gray-bg;
+  background-color: $secondary-color;
 }
 
 /* ==== 導覽列 ==== */
@@ -87,19 +78,37 @@ img {
   width: 100%;
 }
 
-.border-b-secondary {
-  border-bottom: 1px solid $secondary-color;
+// 通用
+.services-section {
+  .container {
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+
+  .row {}
 }
 
-.aboutMe {
-  .row {
-    display: flex;
-    align-items: stretch;
-  }
+.row {
+  display: flex;
 
   .col-left,
   .col-right {
     width: 50%;
+  }
+}
+
+
+.border-b-secondary {
+  border-bottom: 1px solid $secondary-color;
+}
+
+// 關於我們
+
+.aboutMe {
+
+  .row {
+    display: flex;
+    align-items: stretch;
   }
 
   .col-right {
@@ -127,9 +136,9 @@ img {
 }
 
 .aboutMe-col-bottom {
+  margin-left: auto;
+  margin-right: 80px;
   width: 55%;
-  display: inline-flex;
-  flex-direction: column;
   padding: 80px 40px;
   background-color: #fff;
 
@@ -143,76 +152,86 @@ img {
 
 }
 
-.d-flex-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+// 專業服務與方案 service-plans
 
+// 部落格精選 blog-featured
 
-// main
-.services-section {
-  border-bottom: 1px solid;
-  padding: 80px 0;
+// 職涯諮詢成功案例 career-success
 
-  .container {
-    max-width: 1296px;
-    margin: 0 auto;
-    padding: 0 16px;
-  }
+// 訂閱電子報 newsletter-signup
 
-  .services-item {
+.newsletter-signup {
+  .col-right {
     display: flex;
-    flex-direction: column;
-    margin: 0 110px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../image/index/HeroSection2.png");
+    color: $primary-color;
 
-    li {
-      display: flex;
+    .newsletter-box {
+      width: 80%;
+      padding: 80px;
+      background-color: #fff;
     }
   }
 
+  h2 {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
 
-}
-
-.contact-cta {
-  margin-top: 32px;
-  text-align: end;
-
-  a {
-    font-size: $font-title;
-    font-weight: $font-weight-bold;
+  p {
     color: #000;
+    margin-bottom: 24px;
+  }
 
-    &:hover {
+  span {
+    color: $primary-color;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+
+    input {
+      margin-bottom: 8px;
+      width: 90%;
+      padding: 8px 16px;
+      background-color: #F1F1F1;
+      color: #4B4B4B;
+      border: none;
+    }
+
+    button {
+      margin-top: 16px;
+      display: inline-flex;
+      border-radius: 40px;
+      padding: 8px 16px;
+      border: 1px solid $primary-color;
+      background-color: #fff;
       color: $primary-color;
     }
   }
-
-  i {
-    font-size: 24px;
-  }
 }
 
-.services-text {
-  background-color: #fff;
-}
-
-.col-left {
-  img {
-    width: 100%;
+// 與我聯繫 contact-section
+.contact-section {
+  .row {
+    flex-direction: column;
   }
 
-  width: 50%;
-}
+  .callMe-item {
+    display: flex;
+    justify-content: space-between;
 
-.col-right {
-  img {
-    width: 100%;
+    a {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      color: #000;
+    }
+
   }
-
-  width: 50%;
-}
-
-.service-plans,.blog-featured,.career-success,.newsletter-signup,.contact-section{
-  display: none;
 }
